@@ -97,12 +97,14 @@ export default function Results() {
     );
   }
 
-  // Format score to percentage with no decimal places
+  // Fix the formatScore function to ensure it returns reasonable values
   const formatScore = (score: number): number => {
-    return Math.round((score / 10) * 100);
+    // Scale scores to percentages between 20-100%
+    // This prevents bars from being too small while capping at 100%
+    return Math.min(100, Math.max(20, Math.round(score * 10)));
   };
 
-  // Get color based on score percentage
+  // Get text color based on score percentage
   const getScoreColor = (percent: number): string => {
     if (percent >= 80) return 'text-green-600 dark:text-green-500';
     if (percent >= 60) return 'text-yellow-600 dark:text-yellow-500';
@@ -114,6 +116,17 @@ export default function Results() {
     if (percent >= 80) return 'bg-green-600 dark:bg-green-500';
     if (percent >= 60) return 'bg-yellow-600 dark:bg-yellow-500';
     return 'bg-red-600 dark:bg-red-500';
+  };
+
+  // Format the mattress type name for display
+  const formatMattressType = (type: string): string => {
+    switch(type) {
+      case 'memoryFoam': return 'Memory Foam';
+      case 'latexEcoFriendly': return 'Latex/Eco-Friendly';
+      case 'innerspring': return 'Innerspring';
+      case 'hybrid': return 'Hybrid';
+      default: return type;
+    }
   };
 
   return (
@@ -140,18 +153,18 @@ export default function Results() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="space-y-4">
+            <div className="space-y-6">
               {Object.entries(results.combined).sort((a, b) => b[1] - a[1]).map(([type, score]) => {
                 const percent = formatScore(score);
                 return (
-                  <div key={type} className="space-y-1">
+                  <div key={type} className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="font-medium">{type}</span>
-                      <span className={`font-medium ${getScoreColor(percent)}`}>{percent}%</span>
+                      <span className="font-medium text-base">{formatMattressType(type)}</span>
+                      <span className={`font-bold ${getScoreColor(percent)}`}>{percent}%</span>
                     </div>
-                    <div className="w-full bg-muted rounded-full h-2.5">
+                    <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
                       <div 
-                        className={`h-2.5 rounded-full ${getProgressColor(percent)}`}
+                        className={`h-3 rounded-full ${getProgressColor(percent)} transition-all duration-500 ease-in-out`}
                         style={{ width: `${percent}%` }}
                       ></div>
                     </div>
@@ -160,7 +173,7 @@ export default function Results() {
               })}
             </div>
             
-            <div className="mt-6 flex justify-center">
+            <div className="mt-8 flex justify-center">
               <Button 
                 variant="outline" 
                 size="sm"
@@ -186,11 +199,12 @@ export default function Results() {
         <div className="space-y-8 mb-10">
           {recommendations.map((mattress, index) => (
             <Card key={mattress.name} className="border shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-              <div className="md:flex">
+              <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/3 bg-muted/30 p-6 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl font-bold mb-2">{mattress.name}</h3>
-                    <p className="text-sm text-muted-foreground mb-2">{mattress.type} Mattress</p>
+                    <h3 className="text-xl font-bold mb-1">{mattress.name}</h3>
+                    <p className="text-muted-foreground mb-2">{formatMattressType(mattress.type)} Mattress</p>
+                    
                     <div className="flex items-center mb-4">
                       <div className="flex">
                         {[...Array(5)].map((_, i) => (
@@ -218,48 +232,45 @@ export default function Results() {
                 <div className="md:w-2/3 p-6">
                   <div className="mb-4">
                     <h4 className="font-medium mb-2">Description</h4>
-                    <p className="text-muted-foreground">{mattress.description}</p>
+                    <p>{mattress.description || `A ${mattress.firmness.toLowerCase()} ${formatMattressType(mattress.type).toLowerCase()} mattress with ${mattress.cooling.toLowerCase()} cooling features and ${mattress.motionIsolation.toLowerCase()} motion isolation.`}</p>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-medium mb-2 flex items-center gap-2">
-                        <ThumbsUp className="h-4 w-4 text-green-600" />
+                      <h4 className="font-medium flex items-center gap-2 mb-2">
+                        <ThumbsUp className="h-4 w-4 text-green-500" />
                         Pros
                       </h4>
-                      <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <ul className="list-disc pl-5 space-y-1">
                         {mattress.pros.map((pro, i) => (
-                          <li key={i}>{pro}</li>
+                          <li key={i} className="text-sm">{pro}</li>
                         ))}
                       </ul>
                     </div>
                     
                     <div>
-                      <h4 className="font-medium mb-2 flex items-center gap-2">
-                        <ThumbsDown className="h-4 w-4 text-red-600" />
+                      <h4 className="font-medium flex items-center gap-2 mb-2">
+                        <ThumbsDown className="h-4 w-4 text-red-500" />
                         Cons
                       </h4>
-                      <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <ul className="list-disc pl-5 space-y-1">
                         {mattress.cons.map((con, i) => (
-                          <li key={i}>{con}</li>
+                          <li key={i} className="text-sm">{con}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
                   
-                  <div className="flex justify-end mt-4">
-                    <a 
-                      href={mattress.url || '#'} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex"
-                    >
-                      <Button className="gap-2">
-                        View Mattress
-                        <ExternalLink className="h-4 w-4" />
+                  {mattress.url && (
+                    <div className="mt-6">
+                      <Button asChild variant="outline" className="text-sm">
+                        <a href={mattress.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                          View Details
+                          <ExternalLink className="h-3.5 w-3.5" />
+                        </a>
                       </Button>
-                    </a>
-                  </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </Card>
