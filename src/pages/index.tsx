@@ -20,12 +20,19 @@ export default function Home() {
       <Head>
         <title>iwantmattress.ca - Find Your Perfect Mattress</title>
         <meta name="description" content="Find the perfect mattress for your needs in Canada with our personalized recommendation tool" />
+        
+        {/* Favicon links */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
       <main className="flex flex-col items-center fade-in">
         <div className="text-center space-y-4 max-w-3xl mb-12">
           <h1 className="text-4xl font-bold md:text-5xl mb-4">
-            Find Your Perfect Mattress
+            Find Your Perfect Mattress ✨
           </h1>
           <p className="text-xl text-muted-foreground">
             Get personalized mattress recommendations based on your sleep preferences and pain concerns.
@@ -36,7 +43,7 @@ export default function Home() {
         <Card className="w-full max-w-md border shadow-lg">
           <CardHeader className="text-center pb-0">
             <CardTitle className="text-2xl">
-              How many people will use this mattress?
+              How many people will use this mattress? 🛏️
             </CardTitle>
             <CardDescription>
               Select the number of sleepers to customize your experience
@@ -75,7 +82,7 @@ export default function Home() {
               size="lg"
               className="w-full max-w-xs gap-2"
             >
-              Start Questionnaire
+              Start Questionnaire 🚀
               <ArrowRight className="h-4 w-4" />
             </Button>
           </CardFooter>
@@ -101,7 +108,7 @@ export default function Home() {
                 <div className="mx-auto bg-primary/10 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-2">
                   <ThumbsUp className="h-7 w-7 text-primary" />
                 </div>
-                <CardTitle className="text-xl text-center">Partner Compatibility</CardTitle>
+                <CardTitle className="text-xl text-center">Partner Compatibility ❤️</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">Find a mattress that works for both you and your partner, even if you have different preferences.</p>
@@ -113,7 +120,7 @@ export default function Home() {
                 <div className="mx-auto bg-primary/10 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-2">
                   <MapPin className="h-7 w-7 text-primary" />
                 </div>
-                <CardTitle className="text-xl text-center">Canadian Availability</CardTitle>
+                <CardTitle className="text-xl text-center">Canadian Availability 🇨🇦</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">All recommendations are available in Canada with detailed pricing and shipping information.</p>
@@ -148,7 +155,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="text-xl font-medium mb-2">
-                  Score Each Mattress Type
+                  Score Each Mattress Type 🏆
                 </h3>
                 <p className="text-muted-foreground">
                   Our algorithm assigns points to four main mattress types (Memory Foam, Latex/Eco-Friendly, Innerspring, and Hybrid) based on how well they match your needs.
@@ -188,7 +195,7 @@ export default function Home() {
       </main>
 
       <footer className="mt-20 mb-4 text-center text-sm text-muted-foreground">
-        <p>Mattress Selector Canada - Find your perfect night's sleep</p>
+        <p>Mattress Selector Canada - Find your perfect night's sleep 💤</p>
       </footer>
     </div>
   );
