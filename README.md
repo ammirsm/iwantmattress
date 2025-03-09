@@ -1,5 +1,8 @@
 # 🛌 iwantmattress.ca
 
+> **Disclaimer**: The knowledge and recommendations provided by iwantmattress.ca are compiled from extensive research of sleep science literature, mattress industry data, and consumer reviews. We leverage OpenAI's advanced language models (including GPT-4 and O1-Pro) to process and analyze this information, combined with deep research and data aggregation from reputable mattress review websites. While we strive for accuracy through AI-assisted analysis and comprehensive research, we encourage users to conduct their own research and consult healthcare professionals when necessary. Our recommendations serve as a starting point in your mattress selection journey.
+
+
 ![Mattress Selector](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Built with](https://img.shields.io/badge/Built%20with-Next.js-blue)
 ![Made in](https://img.shields.io/badge/Made%20in-Canada-red)
