@@ -97,11 +97,13 @@ export default function Results() {
     );
   }
 
-  // Fix the formatScore function to ensure it returns reasonable values
+  // Format score to percentage with a hard cap at 100%
   const formatScore = (score: number): number => {
-    // Scale scores to percentages between 20-100%
-    // This prevents bars from being too small while capping at 100%
-    return Math.min(100, Math.max(20, Math.round(score * 10)));
+    // Scale the raw scores to a reasonable percentage
+    // Original scores can be quite high (like 16), so we scale down
+    const scaledScore = Math.round((score / 16) * 100);
+    // Ensure a minimum of 20% for visual purposes and maximum of 100%
+    return Math.min(100, Math.max(20, scaledScore));
   };
 
   // Get text color based on score percentage
@@ -125,7 +127,7 @@ export default function Results() {
       case 'latexEcoFriendly': return 'Latex/Eco-Friendly';
       case 'innerspring': return 'Innerspring';
       case 'hybrid': return 'Hybrid';
-      default: return type;
+      default: return type.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
     }
   };
 
