@@ -206,7 +206,12 @@ export default function Results() {
                   
                   <div className="mt-4">
                     <p className="font-medium">Price Range:</p>
-                    <p className="text-lg">${mattress.priceRange?.min} - ${mattress.priceRange?.max}</p>
+                    <p className="text-lg">
+                      {typeof mattress.priceRange === 'string' 
+                        ? mattress.priceRange 
+                        : `$${mattress.priceRange?.min} - $${mattress.priceRange?.max}`
+                      }
+                    </p>
                   </div>
                 </div>
                 

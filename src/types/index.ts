@@ -2,6 +2,7 @@
 export type QuestionOption = {
   id: string | number;
   text: string;
+  followUp?: FollowUpQuestion;
 };
 
 export type FollowUpQuestion = {

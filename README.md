@@ -6,6 +6,10 @@
 
 A sophisticated web application designed to help Canadians find their perfect mattress based on sleep preferences, body type, and pain concerns. Using a scientific approach and advanced algorithm, this tool provides personalized mattress recommendations tailored to individual needs.
 
+## 🔗 Live Demo
+
+Try out the Mattress Selector at: [mattress-selector-canada-2025.vercel.app](https://mattress-selector-canada-2025.vercel.app)
+
 ## ✨ Features
 
 - **Personalized Questionnaire**: Comprehensive assessment of sleep preferences, body type, pain points, and more
