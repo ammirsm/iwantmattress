@@ -36,7 +36,7 @@ export default function Home() {
           </h1>
           <p className="text-xl text-muted-foreground">
             Get personalized mattress recommendations based on your sleep preferences and pain concerns.
-            We'll help you identify the best mattress options available in Canada.
+            We'll help you identify the best mattress options available in 🇨🇦 Canada.
           </p>
         </div>
 

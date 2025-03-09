@@ -125,7 +125,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📄 License
 
-This project is [ISC](https://opensource.org/licenses/ISC) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 
 ## 🙏 Acknowledgements
 
