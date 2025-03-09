@@ -10,6 +10,7 @@ import { Progress } from '@/components/ui/progress';
 import { Checkbox } from '@/components/ui/checkbox';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { ArrowLeft, ArrowRight, CheckCircle2, User, Users } from 'lucide-react';
+import { captureEvent } from '@/lib/posthog';
 
 export default function Questionnaire() {
   const router = useRouter();
@@ -101,12 +102,22 @@ export default function Questionnaire() {
       setCurrentParticipant(2);
       setIsSubmitting(false);
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      
+      // Track completion of first participant's questionnaire
+      captureEvent('questionnaire_participant_completed', { participant: 1 });
     } else {
       // Otherwise, submit the form and go to results
       const queryParams = new URLSearchParams();
       
       // Serialize answers for URL
       queryParams.append('answers', JSON.stringify(answers));
+      
+      // Track completion of questionnaire
+      captureEvent('questionnaire_completed', { 
+        participants: Number(participants),
+        currentParticipant,
+        questionsAnswered: Object.keys(answers[participantKey]).length
+      });
       
       // Navigate to results page
       router.push(`/results?${queryParams.toString()}`);

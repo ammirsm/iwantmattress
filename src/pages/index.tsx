@@ -4,12 +4,14 @@ import Head from 'next/head';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardContent, CardFooter, CardTitle, CardDescription } from '@/components/ui/card';
 import { Brain, ThumbsUp, MapPin, ArrowRight, Bed, Users, User } from 'lucide-react';
+import { captureEvent } from '@/lib/posthog';
 
 export default function Home() {
   const [participants, setParticipants] = useState<number>(1);
   const router = useRouter();
 
   const startQuestionnaire = () => {
+    captureEvent('questionnaire_started', { participants });
     router.push(`/questionnaire?participants=${participants}`);
   };
 

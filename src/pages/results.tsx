@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter, CardDescription } from '@/components/ui/card';
 import { AllAnswers, MattressModel, MattressScores, MattressType, ResultsData } from '@/types';
 import { ArrowLeft, ArrowRight, ExternalLink, Info, Star, ThumbsDown, ThumbsUp } from 'lucide-react';
+import { captureEvent } from '@/lib/posthog';
 
 export default function Results() {
   const router = useRouter();
@@ -66,6 +67,14 @@ export default function Results() {
       
       setRecommendations(recommendedModels);
       setLoading(false);
+      
+      // Track viewing of results
+      captureEvent('viewed_recommendations', {
+        topMattressType: topTypes[0],
+        numParticipants: Object.keys(parsedData.participant2).length ? 2 : 1,
+        numRecommendations: recommendedModels.length
+      });
+      
     } catch (error) {
       console.error('Error processing results:', error);
       setLoading(false);
