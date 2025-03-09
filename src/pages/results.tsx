@@ -189,7 +189,10 @@ export default function Results() {
             
             {showAlgorithm && (
               <div className="mt-6 p-4 bg-muted/50 rounded-lg animate-in fade-in slide-in-from-top-2">
-                <AlgorithmExplanation />
+                <AlgorithmExplanation 
+                  results={results?.combined} 
+                  answers={router.isReady && answers ? JSON.parse(answers as string).participant1 : undefined} 
+                />
               </div>
             )}
           </CardContent>
