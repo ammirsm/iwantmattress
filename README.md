@@ -41,6 +41,39 @@ A sophisticated web application designed to help Canadians find their perfect ma
  ┗ 📜 research.md       # Mattress research data
 ```
 
+## 📑 Core Documentation Files
+
+The core of this application is built around three key markdown files that contain the research and logic driving the mattress recommendations:
+
+### [questionnaire.md](./questionnaire.md)
+A comprehensive 15-question assessment tool with subquestions that captures:
+- Sleeping position and related pain points
+- Body support needs and weight considerations
+- Firmness preferences and material preferences
+- Temperature sensitivity and motion isolation needs
+- Budget range and expected mattress lifespan
+- Specific pain areas and professional guidance
+
+This questionnaire is designed to be completed by individuals or couples to determine the ideal mattress type.
+
+### [recommendation-algorithm.md](./recommendation-algorithm.md)
+A sophisticated scoring algorithm that:
+- Processes answers from the questionnaire
+- Assigns weighted points to four mattress categories (Memory Foam, Latex/Eco-Friendly, Innerspring, and Hybrid)
+- Considers factors like sleeping position, body type, temperature sensitivity, etc.
+- Identifies the best mattress type for the user based on their responses
+- Includes customization notes and tie-breaking logic
+
+### [research.md](./research.md)
+An extensive database of mattresses available in Canada, including:
+- Detailed specs for dozens of mattress models across all categories
+- Information on firmness levels, materials, cooling features, and motion isolation
+- Price ranges and retailer availability
+- Customer and expert reviews with pros and cons
+- Trial periods and warranty information
+
+This research provides the foundation for matching users with actual products available in the Canadian market.
+
 ## 📱 Pages
 
 - **Home**: Introduction and participant selection
