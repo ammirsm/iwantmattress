@@ -13,7 +13,7 @@ A sophisticated web application designed to help Canadians find their perfect ma
 
 ## 🔗 Live Demo
 
-Try out our mattress selector at: [mattressmatchmaker.ca](https://mattressmatchmaker.ca)
+Try out our mattress selector at: [iwantmattress.ca](https://iwantmattress.ca)
 
 ## ✨ Features
 
