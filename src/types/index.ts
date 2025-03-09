@@ -15,12 +15,16 @@ export type Question = {
   question: string;
   options: QuestionOption[];
   followUp?: FollowUpQuestion;
+  optional?: boolean;
+  description?: string;
 };
 
 export type Questionnaire = Question[];
 
 // Answer types
-export type FollowUpAnswer = number | number[];
+export type FollowUpAnswer = {
+  selectedOptions: number[];
+};
 
 export type ParticipantAnswers = {
   [questionId: string]: string | FollowUpAnswer;
@@ -46,6 +50,11 @@ export type ResultsData = {
 };
 
 // Mattress model types
+export type PriceRange = {
+  min: number;
+  max: number;
+};
+
 export type MattressModel = {
   name: string;
   firmness: string;
@@ -53,11 +62,12 @@ export type MattressModel = {
   cooling: string;
   motionIsolation: string;
   edgeSupport: string;
-  priceRange: string;
+  priceRange: string | PriceRange;
   pros: string[];
   cons: string[];
-  link: string;
-  score?: number;
+  url?: string;
+  rating: number;
+  description?: string;
 };
 
 export type MattressesByType = {

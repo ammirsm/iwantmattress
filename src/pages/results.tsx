@@ -206,7 +206,7 @@ export default function Results() {
                   
                   <div className="mt-4">
                     <p className="font-medium">Price Range:</p>
-                    <p className="text-lg">${mattress.priceRange.min} - ${mattress.priceRange.max}</p>
+                    <p className="text-lg">${mattress.priceRange?.min} - ${mattress.priceRange?.max}</p>
                   </div>
                 </div>
                 
@@ -244,7 +244,7 @@ export default function Results() {
                   
                   <div className="flex justify-end mt-4">
                     <a 
-                      href={mattress.url} 
+                      href={mattress.url || '#'} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="inline-flex"

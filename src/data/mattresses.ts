@@ -9,7 +9,9 @@ const mattressesByType: MattressesByType = {
       cooling: "Open-cell foam with breathability",
       motionIsolation: "4/5 - Excellent",
       edgeSupport: "3/5 - Below-average",
-      priceRange: "$800–$1,200 (Queen ~$895)",
+      priceRange: { min: 800, max: 1200 },
+      rating: 4.5,
+      description: "A Canadian-made memory foam mattress with medium-firm support and good pressure relief.",
       pros: [
         "Comfortable medium-firm feel for all sleep positions",
         "Good pressure relief for side sleepers",
@@ -18,175 +20,213 @@ const mattressesByType: MattressesByType = {
       cons: [
         "Not ideal for stomach sleepers or those who prefer very firm beds",
         "Edge sagging when sitting",
-        "May trap some heat"
+        "May sleep warm for hot sleepers"
       ],
-      link: "https://ca.endy.com/products/mattresses"
+      url: "https://ca.endy.com/products/the-endy-mattress"
     },
     {
-      name: "Douglas Original",
-      firmness: "Medium-firm (6–6.7/10)",
-      type: "All-foam (gel foam, elastex foam, support foam)",
-      cooling: "Cooling gel-infused foam and moisture-wicking cover",
-      motionIsolation: "5/5 - Very strong",
-      edgeSupport: "3/5 - Fair",
-      priceRange: "Under $800 (Queen ~$799)",
-      pros: [
-        "Sleeps cooler than many memory foam beds",
-        "Low motion transfer and good pressure relief",
-        "Great value for the price"
-      ],
-      cons: [
-        "Average edge support",
-        "May not suit strict stomach sleepers",
-        "Some very hot sleepers may still find it warm"
-      ],
-      link: "https://www.douglas.ca/en/mattresses"
-    },
-    {
-      name: "Novosbed",
-      firmness: "Soft (4/10), Medium (6/10), or Firm (7-8/10)",
-      type: "Premium memory foam",
-      cooling: "Breathable Tencel cover and airflow foam layers",
+      name: "Douglas",
+      firmness: "Medium-firm (6/10)",
+      type: "All-foam",
+      cooling: "Cooling gel foam top layer",
       motionIsolation: "5/5 - Excellent",
-      edgeSupport: "3/5 - Average",
-      priceRange: "$800–$1,200 (Queen ~$1,199)",
+      edgeSupport: "3/5 - Below-average",
+      priceRange: { min: 749, max: 999 },
+      rating: 4.6,
+      description: "An affordable Canadian memory foam mattress with cooling gel and eco-conscious materials.",
       pros: [
-        "Luxurious high-density memory foam feel",
-        "Very pressure relieving and durable",
-        "Offers comfort adjustment kit to fine-tune firmness"
+        "Excellent value for price point",
+        "Good pressure relief and support",
+        "CertiPUR-US certified foams"
       ],
       cons: [
-        "Can sleep a bit warmer than hybrids",
-        "Slow-response feel means less bounce",
-        "Higher price point relative to other online Canadian mattresses"
+        "Limited motion isolation compared to denser foams",
+        "Edge support could be better",
+        "May not be suitable for heavyweight sleepers"
       ],
-      link: "https://www.novosbed.com"
+      url: "https://www.douglasbed.ca/"
+    },
+    {
+      name: "Casper Original",
+      firmness: "Medium (5.5/10)",
+      type: "All-foam",
+      cooling: "AirScape perforated breathable foam",
+      motionIsolation: "4/5 - Very good",
+      edgeSupport: "3/5 - Average",
+      priceRange: { min: 895, max: 1695 },
+      rating: 4.3,
+      description: "A well-known memory foam mattress with zoned support and balanced comfort.",
+      pros: [
+        "Zoned support for proper spinal alignment",
+        "Works for all sleeping positions",
+        "Balanced feel between sink and support"
+      ],
+      cons: [
+        "Higher price point than some competitors",
+        "May sleep too warm for hot sleepers",
+        "Not firm enough for some stomach sleepers"
+      ],
+      url: "https://casper.com/ca/en/mattresses/casper-original/"
     }
   ],
   latexEcoFriendly: [
     {
-      name: "Silk & Snow Organic",
-      firmness: "Firm (8/10) or Medium (6/10)",
-      type: "Latex Hybrid (organic materials)",
-      cooling: "Natural latex, wool, and cotton with excellent breathability",
-      motionIsolation: "3/5 - Moderate",
-      edgeSupport: "5/5 - Excellent",
-      priceRange: "$1,200–$2,000 (Queen ~$1,600)",
+      name: "Essentia Tatami",
+      firmness: "Medium-firm to Firm (7/10)",
+      type: "Organic latex",
+      cooling: "Naturally cool latex material",
+      motionIsolation: "3/5 - Good",
+      edgeSupport: "4/5 - Very good",
+      priceRange: { min: 2299, max: 4047 },
+      rating: 4.7,
+      description: "A premium organic latex mattress made in Canada with excellent support and eco-friendly materials.",
       pros: [
-        "Natural and chemical-free certified materials",
-        "Responsive, uplifted feel - great for combination sleepers",
-        "Excellent cooling and breathability"
+        "Certified organic materials",
+        "No off-gassing or chemicals",
+        "Durable construction likely to last 15+ years"
       ],
       cons: [
-        "Feel of latex not for everyone (more bouncy than memory foam)",
-        "Motion isolation not as good as full memory foam",
-        "Higher price point"
+        "Very expensive price point",
+        "May be too firm for side sleepers",
+        "Heavy and difficult to move"
       ],
-      link: "https://www.silkandsnow.com/en-ca/organic-mattress"
-    }
-  ],
-  innerspring: [
-    {
-      name: "Sealy Posturepedic",
-      firmness: "Plush, Medium, or Firm options available",
-      type: "Innerspring / Hybrid with pillow-top",
-      cooling: "SealyCool or Chill technology with phase change material",
-      motionIsolation: "3/5 - Moderate",
-      edgeSupport: "5/5 - Excellent (DuraFlex edge system)",
-      priceRange: "$800–$1,200 for mid-range models",
-      pros: [
-        "Reliable support and durability",
-        "Zoned coil support helps with back support",
-        "Excellent edge support"
-      ],
-      cons: [
-        "May not contour as precisely as memory foam",
-        "Some motion transfer can be felt",
-        "Quality varies by specific model"
-      ],
-      link: "https://www.sealy.ca/en-ca/mattresses/posturepedic"
+      url: "https://myessentia.ca/collections/tatami-mattress"
     },
     {
-      name: "Saatva Classic",
-      firmness: "Plush Soft (3-4/10), Luxury Firm (6/10), or Firm (8/10)",
-      type: "Innerspring (coil-on-coil) with Euro Pillow-Top",
-      cooling: "Excellent airflow through two coil layers",
-      motionIsolation: "3/5 - Moderate",
-      edgeSupport: "5/5 - Excellent",
-      priceRange: "$1,200–$2,000 (Queen ~$1,795)",
+      name: "Recore Latex Foam",
+      firmness: "Medium (5.5/10)",
+      type: "Latex Foam",
+      cooling: "Graphite-infused latex for cooling",
+      motionIsolation: "4/5 - Very good",
+      edgeSupport: "3/5 - Average",
+      priceRange: { min: 849, max: 1149 },
+      rating: 4.2,
+      description: "A Canadian-made latex foam mattress designed for active lifestyles with pressure relief and cooling properties.",
       pros: [
-        "Balanced feel with cushioning and robust support",
-        "Strong lumbar support for back pain sufferers",
-        "Hotel-like finish and quality"
+        "Responsive surface for easy movement",
+        "Graphite-infused for cooling",
+        "Great price point for latex"
       ],
       cons: [
-        "Some partner movement can be felt",
-        "Heavy and difficult to move",
-        "$99 transportation fee for returns in Canada"
+        "Not 100% natural latex",
+        "May not be supportive enough for heavier people",
+        "Some may find it too bouncy"
       ],
-      link: "https://www.saatva.com/mattresses/saatva-classic"
+      url: "https://www.recorebed.ca/"
     }
   ],
   hybrid: [
     {
-      name: "Logan & Cove Hybrid",
-      firmness: "Medium-Plush (5.5/10) or Medium-firm (7/10)",
-      type: "Luxury Pillow-top Hybrid",
-      cooling: "Cooling gel foam and breathable Tencel fabric",
-      motionIsolation: "3/5 - Moderate",
-      edgeSupport: "4/5 - Strong",
-      priceRange: "$800–$1,200 (Queen ~$999) or $1,200–$2,000 (Premium)",
+      name: "Logan & Cove Luxury Pillow-Top",
+      firmness: "Medium-plush (4.5/10) or Medium-firm (6.5/10)",
+      type: "Hybrid",
+      cooling: "Gel-infused foam and breathable coils",
+      motionIsolation: "4/5 - Very good",
+      edgeSupport: "4.5/5 - Excellent",
+      priceRange: { min: 999, max: 1399 },
+      rating: 4.8,
+      description: "A luxury pillow-top hybrid mattress with multiple foam layers and pocketed coils for excellent support.",
       pros: [
-        "High-end hotel luxury feel",
-        "Plush quilted pillow-top with robust coil support",
-        "Quality construction and cooling performance"
+        "Luxurious pillow-top feel at reasonable price",
+        "Excellent edge support",
+        "Two firmness options"
       ],
       cons: [
-        "Higher motion transfer due to coil layers",
-        "Heavy and comes folded in a box",
-        "Price higher than all-foam options"
+        "Heavy and difficult to move",
+        "May be too soft for some stomach sleepers",
+        "Slight off-gassing initially"
       ],
-      link: "https://www.loganandcove.ca"
+      url: "https://www.logancove.ca/"
+    },
+    {
+      name: "Brunswick Spring",
+      firmness: "Medium-firm (6/10)",
+      type: "Hybrid",
+      cooling: "Gel-infused foam and spring construction",
+      motionIsolation: "3.5/5 - Good",
+      edgeSupport: "4.5/5 - Excellent",
+      priceRange: { min: 799, max: 1099 },
+      rating: 4.4,
+      description: "An affordable Canadian-made hybrid mattress with euro-top comfort and pocketed coils.",
+      pros: [
+        "Excellent balance of comfort and support",
+        "Superior edge support",
+        "Great value for a hybrid"
+      ],
+      cons: [
+        "Only one firmness option",
+        "Some motion transfer compared to all-foam",
+        "May not be plush enough for some side sleepers"
+      ],
+      url: "https://www.brunswickbed.ca/"
     },
     {
       name: "Silk & Snow Hybrid",
       firmness: "Medium-firm (6.5/10)",
-      type: "Hybrid (foam + coils)",
-      cooling: "Gel-infused memory foam and coil airflow",
-      motionIsolation: "4/5 - Good",
-      edgeSupport: "4/5 - Very solid",
-      priceRange: "$800–$1,200 (Queen ~$1,000)",
+      type: "Hybrid",
+      cooling: "Coil system allows airflow, cooling gel foam",
+      motionIsolation: "4/5 - Very good",
+      edgeSupport: "4/5 - Very good",
+      priceRange: { min: 850, max: 1250 },
+      rating: 4.5,
+      description: "A Canadian hybrid mattress with individually wrapped coils and cooling gel memory foam.",
       pros: [
-        "Great spine support with zoned coils",
-        "Relieved pressure points without being too soft",
-        "Quality materials at reasonable price"
+        "Individually wrapped zoned coils for targeted support",
+        "Antimicrobial cover",
+        "Good balance of motion isolation and responsiveness"
       ],
       cons: [
-        "May feel too firm for those who prefer very soft beds",
-        "Some motion isolation issues for sensitive sleepers",
-        "Initial off-gassing smell for a few days"
+        "May feel too firm for lightweight side sleepers",
+        "Some customers report premature sagging",
+        "Can be quite heavy"
       ],
-      link: "https://www.silkandsnow.com/en-ca/hybrid-mattress"
+      url: "https://silkandsnow.com/en-ca/hybrid-mattress/"
+    }
+  ],
+  innerspring: [
+    {
+      name: "Saatva Classic",
+      firmness: "Multiple options: Plush Soft (3/10), Luxury Firm (5-7/10), Firm (8/10)",
+      type: "Innerspring",
+      cooling: "Excellent airflow through dual coil layers",
+      motionIsolation: "3/5 - Average",
+      edgeSupport: "5/5 - Excellent",
+      priceRange: { min: 1299, max: 1999 },
+      rating: 4.7,
+      description: "A luxury innerspring mattress with a Euro pillow top and dual-coil support system.",
+      pros: [
+        "Three firmness options",
+        "Excellent edge support",
+        "Luxury hotel feel with Euro pillow top"
+      ],
+      cons: [
+        "Higher price point",
+        "Some motion transfer",
+        "Heavy and difficult to move"
+      ],
+      url: "https://www.saatva.ca/mattresses/saatva-classic"
     },
     {
-      name: "Casper Original Hybrid",
-      firmness: "Medium-firm (6-7/10)",
-      type: "Hybrid (foam + pocketed coils)",
-      cooling: "AirScape breathable foam with perforations",
-      motionIsolation: "4/5 - Very good",
-      edgeSupport: "4/5 - Good",
-      priceRange: "$800–$1,200 (Queen ~$1,295)",
+      name: "Serta Perfect Sleeper",
+      firmness: "Multiple options available",
+      type: "Innerspring",
+      cooling: "Good airflow through coil system",
+      motionIsolation: "3/5 - Average",
+      edgeSupport: "4/5 - Very good",
+      priceRange: { min: 799, max: 1999 },
+      rating: 4.2,
+      description: "A traditional innerspring mattress with various comfort options and good support.",
       pros: [
-        "Zoned support design improves spinal alignment",
-        "Balanced feel works for multiple sleeping positions",
-        "Good quality and customer service"
+        "Widely available in stores",
+        "Multiple firmness options",
+        "Responsive feel for combination sleepers"
       ],
       cons: [
-        "Too middling for those who prefer very plush or very firm",
-        "May feel too firm on shoulders for lightweight side sleepers",
-        "Some durability concerns for very heavy users"
+        "More motion transfer than foam mattresses",
+        "May develop impressions over time",
+        "Less pressure relief than memory foam"
       ],
-      link: "https://casper.com/ca/en/mattresses/casper-original"
+      url: "https://www.serta.ca/mattresses"
     }
   ]
 };
