@@ -1,6 +1,6 @@
+# Mattress Selector Canada: Questionnaire
 
-
-<questionaire>
+*This questionnaire was initially generated using advanced AI models (GPT-o1-pro and GPT deep research) and has been refined for use in the Mattress Selector Canada application.*
 
 ## Closed-Ended Mattress Preference & Pain Experience Questionnaire
 
@@ -61,7 +61,7 @@
 - □ Yes, latex/natural materials helped  
 - □ Yes, innerspring felt best  
 - □ Yes, hybrid worked well  
-- □ Tried but didn’t help  
+- □ Tried but didn't help  
 - □ Never tried or not sure  
 
 ---
@@ -75,7 +75,7 @@
 **5a. Does overheating or feeling chilled affect your sleep quality or pain?**  
 - □ Yes, heat worsens my rest or pain  
 - □ Yes, cold makes me stiff/sore  
-- □ No, temperature doesn’t affect me  
+- □ No, temperature doesn't affect me  
 - □ Not sure  
 
 ---
@@ -139,7 +139,7 @@
 - **A.** ~5 years or less (short-term)  
 - **B.** 7–8 years (standard lifespan)  
 - **C.** 10+ years (long-term, durable)  
-- **D.** As long as it’s comfortable—I’m open to paying more
+- **D.** As long as it's comfortable—I'm open to paying more
 
 **10a. If it starts to aggravate your pain, would you replace sooner?**  
 - □ Yes  
@@ -165,7 +165,7 @@
 ### 12. Professional Guidance  
 - **A.** Yes, was advised to use a firmer mattress  
 - **B.** Yes, was advised to use a softer/plush mattress  
-- **C.** Yes, but only told to get “good support”  
+- **C.** Yes, but only told to get "good support"  
 - **D.** No professional guidance so far
 
 **12a. Did they suggest any specific feature (zoned support, adjustable base, etc.)?**  
@@ -180,7 +180,7 @@
 - **A.** Plush memory foam (relieved pressure points)  
 - **B.** Balanced hybrid (supportive but not too firm)  
 - **C.** Firmer innerspring (helped with back pain)  
-- **D.** Haven’t found one I truly love yet
+- **D.** Haven't found one I truly love yet
 
 **13a. Did it help reduce pain or stiffness?**  
 - □ Yes, significantly  
@@ -204,7 +204,7 @@
 
 ---
 
-### 15. Views on a “Split” or Dual-Firmness Mattress  
+### 15. Views on a "Split" or Dual-Firmness Mattress  
 - **A.** Very interested—might solve differences  
 - **B.** Open to it, but worried about cost or setup  
 - **C.** Not interested—prefer one consistent feel  
@@ -221,7 +221,7 @@
 
 1. **Compare Answers**: Review each item side by side with your partner to see where you agree (e.g., both want Medium-Firm) or differ (e.g., one needs plush, the other needs firm).  
 2. **Identify Patterns**:  
-   - If you both marked “neck/shoulder pain” (Q11) and prefer plush (Q3=A), consider a **pressure-relieving memory foam or plush hybrid**.  
+   - If you both marked "neck/shoulder pain" (Q11) and prefer plush (Q3=A), consider a **pressure-relieving memory foam or plush hybrid**.  
    - If you both have lower back pain but chose firmer (Q3=C or D), look into a **medium-firm or firm hybrid/innerspring** for better lumbar support.  
 3. **Budget vs. Comfort**: If pain relief is a priority, answers to Q9 and Q9a can guide whether a higher-end or specialized mattress is worth it.  
 4. **Check for Special Features**:  

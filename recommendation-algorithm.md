@@ -1,5 +1,8 @@
-<recommendation-algorihtm>
-Below is a **step-by-step algorithm** (without explicit code) describing how to score each mattress category—**Memory Foam**, **Latex/Eco-Friendly**, **Innerspring**, and **Hybrid**—based on the answers A, B, C, or D for each of the 15 questions in the closed-ended questionnaire. You can adjust the scoring as needed in your documentation or implementation.
+# Mattress Selector Canada: Recommendation Algorithm
+
+*This recommendation algorithm was initially generated using advanced AI models (GPT-o1-pro and GPT deep research) and has been refined for use in the Mattress Selector Canada application.*
+
+Below is a **step-by-step algorithm** describing how to score each mattress category—**Memory Foam**, **Latex/Eco-Friendly**, **Innerspring**, and **Hybrid**—based on the answers A, B, C, or D for each of the 15 questions in the closed-ended questionnaire.
 
 ---
 
@@ -96,7 +99,7 @@ Below is a **step-by-step algorithm** (without explicit code) describing how to 
    - If **Significant (A)**:  
      - Latex/Eco-Friendly +2 (often minimal off-gassing, naturally hypoallergenic)  
    - If **Avoid strong odors (D)**:  
-     - Memory Foam −1 (common off-gassing unless it’s certified low-VOC)  
+     - Memory Foam −1 (common off-gassing unless it's certified low-VOC)  
 
 10. **Q8: Edge Support**  
     - If **Crucial (A)**:  
@@ -174,19 +177,16 @@ Below is a **step-by-step algorithm** (without explicit code) describing how to 
     - The category with the **highest total score** is the recommended type.
 
 19. **Output**  
-    - Present the mattress type (or top two if there’s a tie) as the recommendation.
+    - Present the mattress type (or top two if there's a tie) as the recommendation.
 
 ---
 
-### Notes & Customization
+## Notes & Customization
 
-- You can **fine-tune** the point system to match your specific knowledge or priorities. For instance, you might increase the weight for budget concerns (Q9) or temperature sensitivity (Q5) if that’s more important.  
+- You can **fine-tune** the point system to match your specific knowledge or priorities. For instance, you might increase the weight for budget concerns (Q9) or temperature sensitivity (Q5) if that's more important.  
 - If multiple categories tie with equal scores, you can:  
   - Recommend the top two or three categories.  
   - Add further tie-breaking logic based on critical questions (e.g., if user has severe back pain, you might lean toward a medium-firm or firmer type).  
-- In a real-world application, you might also link each category to **specific brand models** or sub-recommendations (e.g., “Latex Hybrid with zoned coils” if both latex and hybrid have high scores).
+- In a real-world application, you might also link each category to **specific brand models** or sub-recommendations (e.g., "Latex Hybrid with zoned coils" if both latex and hybrid have high scores).
 
-By following these steps, you’ll be able to map each **closed-ended questionnaire** answer to a straightforward **scoring algorithm**, leading to a suggested mattress type.
-
-
-</recommendation-algorihtm>
+By following these steps, you'll be able to map each **closed-ended questionnaire** answer to a straightforward **scoring algorithm**, leading to a suggested mattress type.
