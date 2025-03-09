@@ -1,6 +1,8 @@
-# 🛌 iwantmattress.ca
+# 🛌 Mattress Match Maker - iwantmattress.ca
 
-> **Disclaimer**: The knowledge and recommendations provided by iwantmattress.ca are compiled from extensive research of sleep science literature, mattress industry data, and consumer reviews. We leverage OpenAI's advanced language models (including GPT-4 and O1-Pro) to process and analyze this information, combined with deep research and data aggregation from reputable mattress review websites. While we strive for accuracy through AI-assisted analysis and comprehensive research, we encourage users to conduct their own research and consult healthcare professionals when necessary. Our recommendations serve as a starting point in your mattress selection journey.
+> **Your Personal Mattress Pairing Expert for Canadians**
+
+> **Disclaimer**: The knowledge and recommendations provided by Mattress Match Maker are compiled from extensive research of sleep science literature, mattress industry data, and consumer reviews. We leverage OpenAI's advanced language models (including GPT-4 and O1-Pro) to process and analyze this information, combined with deep research and data aggregation from reputable mattress review websites. While we strive for accuracy through AI-assisted analysis and comprehensive research, we encourage users to conduct their own research and consult healthcare professionals when necessary. Our recommendations serve as a starting point in your mattress selection journey.
 
 
 ![Mattress Selector](https://img.shields.io/badge/Status-Active-brightgreen)
@@ -11,7 +13,7 @@ A sophisticated web application designed to help Canadians find their perfect ma
 
 ## 🔗 Live Demo
 
-Try out our mattress selector at: [iwantmattress.ca](https://iwantmattress.ca)
+Try out our mattress selector at: [mattressmatchmaker.ca](https://mattressmatchmaker.ca)
 
 ## ✨ Features
 
