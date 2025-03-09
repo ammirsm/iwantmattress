@@ -1,8 +1,9 @@
 {
-  "name": "mattress-selector-canada",
+  "name": "iwantmattress-ca",
   "version": "1.0.0",
-  "description": "A mattress selector tool for Canadian market",
+  "description": "iwantmattress.ca - Find the perfect mattress for your needs in Canada",
   "main": "index.js",
+  "homepage": "https://iwantmattress.ca",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,8 +12,9 @@
   },
   "keywords": [
     "mattress",
-    "selector",
-    "canada"
+    "recommendations",
+    "canada",
+    "sleep"
   ],
   "author": "",
   "license": "ISC",

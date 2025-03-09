@@ -1,6 +1,6 @@
-# 🛌 Mattress Selector Canada
+# 🛌 iwantmattress.ca
 
-![Mattress Selector Canada](https://img.shields.io/badge/Status-Active-brightgreen)
+![Mattress Selector](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Built with](https://img.shields.io/badge/Built%20with-Next.js-blue)
 ![Made in](https://img.shields.io/badge/Made%20in-Canada-red)
 
@@ -8,7 +8,7 @@ A sophisticated web application designed to help Canadians find their perfect ma
 
 ## 🔗 Live Demo
 
-Try out the Mattress Selector at: [mattress-selector-canada-2025.vercel.app](https://mattress-selector-canada-2025.vercel.app)
+Try out our mattress selector at: [iwantmattress.ca](https://iwantmattress.ca)
 
 ## ✨ Features
 

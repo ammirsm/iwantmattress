@@ -16,18 +16,18 @@ export default function Home() {
   return (
     <div className="container px-4 py-8 md:py-12">
       <Head>
-        <title>Mattress Selector - Canada</title>
-        <meta name="description" content="Find the perfect mattress for your needs in Canada" />
+        <title>iwantmattress.ca - Find Your Perfect Mattress</title>
+        <meta name="description" content="Find the perfect mattress for your needs in Canada with our personalized recommendation tool" />
       </Head>
 
       <main className="flex flex-col items-center fade-in">
         <div className="text-center space-y-4 max-w-3xl mb-12">
           <h1 className="text-4xl font-bold md:text-5xl mb-4">
-            Canadian Mattress Selector
+            Find Your Perfect Mattress
           </h1>
           <p className="text-xl text-muted-foreground">
-            Find the perfect mattress based on your sleep preferences and pain concerns.
-            This tool will help you identify the best mattress options available in Canada.
+            Get personalized mattress recommendations based on your sleep preferences and pain concerns.
+            We'll help you identify the best mattress options available in Canada.
           </p>
         </div>
 

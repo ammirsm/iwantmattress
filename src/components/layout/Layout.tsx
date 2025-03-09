@@ -18,7 +18,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className="flex items-center gap-2 overflow-hidden">
             <Link href="/" className="flex items-center gap-2 min-w-0">
               <Bed className="h-6 w-6 text-primary flex-shrink-0" />
-              <span className="font-bold text-xl truncate">Mattress Selector</span>
+              <span className="font-bold text-xl truncate">iwantmattress.ca</span>
             </Link>
           </div>
           
@@ -82,7 +82,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:h-16">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Mattress Selector Canada. All rights reserved.
+              © {new Date().getFullYear()} iwantmattress.ca. All rights reserved.
             </p>
             <div className="flex items-center gap-4">
               <Link href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

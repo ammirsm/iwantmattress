@@ -26,6 +26,10 @@ export default function Questionnaire() {
   if (!questionnaire.length || !router.isReady) {
     return (
       <div className="container mx-auto px-4 flex items-center justify-center h-[50vh]">
+        <Head>
+          <title>Mattress Questionnaire | iwantmattress.ca</title>
+          <meta name="description" content="Complete our questionnaire to find your perfect mattress match in Canada" />
+        </Head>
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
           <p className="text-lg">Loading questionnaire...</p>
@@ -130,12 +134,12 @@ export default function Questionnaire() {
   return (
     <div className="container mx-auto px-4 py-8 fade-in">
       <Head>
-        <title>Mattress Questionnaire - Mattress Selector Canada</title>
-        <meta name="description" content="Complete this questionnaire to find your perfect mattress" />
+        <title>Mattress Questionnaire | iwantmattress.ca</title>
+        <meta name="description" content="Complete our questionnaire to find your perfect mattress match in Canada" />
       </Head>
 
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold mb-4 text-center">Mattress Questionnaire</h1>
+        <h1 className="text-3xl font-bold mb-4 text-center">Find Your Perfect Mattress</h1>
         
         {/* Sticky progress section */}
         <div className="sticky top-16 z-10 py-4 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b mb-8">

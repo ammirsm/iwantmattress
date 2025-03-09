@@ -134,8 +134,8 @@ export default function Results() {
   return (
     <div className="container mx-auto px-4 py-8 fade-in">
       <Head>
-        <title>Your Mattress Recommendations - Mattress Selector Canada</title>
-        <meta name="description" content="View your personalized mattress recommendations" />
+        <title>Your Mattress Recommendations | iwantmattress.ca</title>
+        <meta name="description" content="View your personalized Canadian mattress recommendations based on your preferences" />
       </Head>
 
       <div className="max-w-4xl mx-auto">
