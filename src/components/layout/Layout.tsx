@@ -30,7 +30,7 @@ export default function Layout({ children }: LayoutProps) {
               Questionnaire
             </Link>
             <Link 
-              href="https://github.com/ammirsm/mattress-selector-canada-2025" 
+              href="https://github.com/ammirsm/iwantmattress" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1.5"
@@ -76,7 +76,7 @@ export default function Layout({ children }: LayoutProps) {
                 Questionnaire
               </Link>
               <Link 
-                href="https://github.com/ammirsm/mattress-selector-canada-2025"
+                href="https://github.com/ammirsm/iwantmattress"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex w-full justify-center items-center gap-1.5 rounded-md py-2 text-sm font-medium hover:bg-primary/10 transition-colors"
@@ -105,7 +105,7 @@ export default function Layout({ children }: LayoutProps) {
             </p>
             <div className="flex items-center gap-4">
               <Link 
-                href="https://github.com/ammirsm/mattress-selector-canada-2025" 
+                href="https://github.com/ammirsm/iwantmattress" 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5"
                 target="_blank"
                 rel="noopener noreferrer"

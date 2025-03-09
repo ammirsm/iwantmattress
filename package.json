@@ -4,6 +4,10 @@
   "description": "iwantmattress.ca - Find the perfect mattress for your needs in Canada",
   "main": "index.js",
   "homepage": "https://iwantmattress.ca",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ammirsm/iwantmattress.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

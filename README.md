@@ -103,8 +103,8 @@ These AI-generated resources were then refined, validated, and implemented into 
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/ammirsm/mattress-selector-canada-2025.git
-   cd mattress-selector-canada-2025
+   git clone https://github.com/ammirsm/iwantmattress.git
+   cd iwantmattress
    ```
 
 2. Install dependencies
@@ -121,7 +121,7 @@ These AI-generated resources were then refined, validated, and implemented into 
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/ammirsm/mattress-selector-canada-2025/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/ammirsm/iwantmattress/issues).
 
 ## 📄 License
 
