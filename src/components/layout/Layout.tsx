@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { ModeToggle } from '@/components/ui/mode-toggle';
 import { Button } from '@/components/ui/button';
-import { Bed, Menu, X } from 'lucide-react';
+import { Bed, Menu, X, Github } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -28,6 +28,15 @@ export default function Layout({ children }: LayoutProps) {
             </Link>
             <Link href="/questionnaire" className="text-sm font-medium hover:text-primary transition-colors">
               Questionnaire
+            </Link>
+            <Link 
+              href="https://github.com/ammirsm/mattress-selector-canada-2025" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1.5"
+            >
+              <Github className="h-4 w-4" />
+              <span>Open Source</span>
             </Link>
             <ModeToggle />
           </nav>
@@ -66,6 +75,16 @@ export default function Layout({ children }: LayoutProps) {
               >
                 Questionnaire
               </Link>
+              <Link 
+                href="https://github.com/ammirsm/mattress-selector-canada-2025"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex w-full justify-center items-center gap-1.5 rounded-md py-2 text-sm font-medium hover:bg-primary/10 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Github className="h-4 w-4" />
+                Open Source
+              </Link>
               <div className="flex justify-center pt-2">
                 <ModeToggle />
               </div>
@@ -85,6 +104,15 @@ export default function Layout({ children }: LayoutProps) {
               © {new Date().getFullYear()} iwantmattress.ca. All rights reserved.
             </p>
             <div className="flex items-center gap-4">
+              <Link 
+                href="https://github.com/ammirsm/mattress-selector-canada-2025" 
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="h-3.5 w-3.5" />
+                <span>Open Source on GitHub</span>
+              </Link>
               <Link href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Privacy Policy
               </Link>
