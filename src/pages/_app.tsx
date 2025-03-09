@@ -4,7 +4,7 @@ import { ThemeProvider } from '@/components/ui/theme-provider';
 import Layout from '@/components/layout/Layout';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { initPostHog, posthog } from '@/lib/posthog';
+import { initPostHog, posthog, captureEvent } from '@/lib/posthog';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -15,9 +15,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
     // Track page views when the route changes
     const handleRouteChange = () => {
-      if (process.env.NODE_ENV === 'production') {
-        posthog.capture('$pageview');
-      }
+      captureEvent('page_view', { 
+        path: router.asPath,
+        force: true // Allow capturing even in development for testing
+      });
     };
 
     router.events.on('routeChangeComplete', handleRouteChange);
@@ -25,7 +26,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
-  }, [router.events]);
+  }, [router.events, router.asPath]);
 
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
