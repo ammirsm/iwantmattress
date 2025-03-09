@@ -40,6 +40,7 @@ next-env.d.ts
 # IDE specific files
 .idea
 .vscode
+.cursor/
 *.swp
 *.swo
 
@@ -50,6 +51,10 @@ next-env.d.ts
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-Thumbs.db 
+Thumbs.db
 
-.cursor/
+# Project specific
+temp-*
+backup/
+*.jsx
+*.js.map
